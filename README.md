@@ -4,7 +4,7 @@ Node.js CLI app using typescript for predict is a car in Quito-Ecuador can be in
 
 ## Build project
 
-```terminal
+```console
   npm run build
 ```
 

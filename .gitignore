@@ -1,0 +1,14 @@
+# Node.js files
+node_modules/
+build/
+*.log
+npm-debug.log
+yarn-error.log
+yarn-debug.log*
+
+# TypeScript files
+*.tsbuildinfo
+*.js.map
+
+# Editor files
+.vscode/

@@ -1,5 +1,6 @@
-export class Date {
-  public constructor(){
-    
-  }
+export interface Date {
+  day: number;
+  month: number;
+  year: number;
 }
+

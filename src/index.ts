@@ -1,13 +1,15 @@
-import { time } from 'console';
 import { Plate } from './models/Plate.js';
-import { ScheduleNoCirculation } from './models/ScheduleNoCirculation.js';
 import { PredictorService } from './Services/PredictorService.js';
 
 console.clear();
-const placaSusuki = new Plate("PTM-193");
-const dateNueva = new Date();
-const [hours, minutes] = "15:30".split(':');
-dateNueva.setHours(Number(hours),Number(minutes),0,0);
+console.log(`** PICO Y PLACA **`);
+const placaSuzuki:Plate = new Plate("PTM-193");
+const dateSearch:string = '10/08/2023';
+const hourSearch:string = "16:30";
 
-const predictor = new PredictorService(placaSusuki, '19/06/2023', dateNueva );
+const hourNew = new Date();
+const [hours, minutes] = hourSearch.split(':');
+hourNew.setHours(Number(hours),Number(minutes),0,0);
+
+const predictor = new PredictorService(placaSuzuki, dateSearch, hourNew );
 console.log(predictor.predictCirculation());

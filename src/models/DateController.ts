@@ -1,5 +1,6 @@
-import { Holiday } from '../models/Holiday.js';
-export class DateTimeService {
+import { Holiday } from './Holiday.js';
+
+export class DateController {
   public date: string;
 
   constructor(date:string){

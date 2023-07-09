@@ -1,4 +1,4 @@
-import { Date } from './Date.js';
+import { Date } from "../Interfaces/Date.js";
 
 export class Holiday implements Date{
   public constructor(
